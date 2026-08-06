@@ -24,13 +24,10 @@
     "jupiter-lab"
   ],
   "author": "Sejin Ahmed",
-  "homepage": "https://github.com/mern-sejin2010/npm-jupiter-lab",
+  "homepage": "https://jupiter-lab.vercel.app/react",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mern-sejin2010/npm-jupiter-lab.git"
-  },
-  "bugs": {
-    "url": "https://github.com/mern-sejin2010/npm-jupiter-lab/issues"
+    "url": "git+https://github.com/mern-sejin2010/npm-jupiter-lab-react.git"
   },
   "files": [
     "dist",
