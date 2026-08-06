@@ -1,0 +1,53 @@
+{
+  "name": "@jupiter-lab/react",
+  "version": "1.0.13",
+  "description": "A CLI for installing React, Next.js, MUI, Express.js, and full-stack components from the Jupiter Lab registry.",
+  "bin": {
+    "jupiter-lab": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "setup": "tsc && npm link",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "nextjs",
+    "mui",
+    "tailwindcss",
+    "express",
+    "typescript",
+    "javascript",
+    "boilerplate",
+    "fullstack",
+    "jupiter-lab"
+  ],
+  "author": "Sejin Ahmed",
+  "homepage": "https://github.com/mern-sejin2010/npm-jupiter-lab",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mern-sejin2010/npm-jupiter-lab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mern-sejin2010/npm-jupiter-lab/issues"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "fs-extra": "^11.4.0",
+    "ora": "^9.4.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^26.1.2",
+    "tsx": "^4.23.9",
+    "typescript": "^7.0.2"
+  }
+}

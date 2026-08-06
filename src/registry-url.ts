@@ -1,0 +1,1 @@
+export const registryURL = 'https://jupiter-lab.vercel.app';
