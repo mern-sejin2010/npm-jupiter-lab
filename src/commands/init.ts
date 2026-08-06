@@ -3,6 +3,6 @@ import initProject from '../actions/init-project.js';
 export default function initCommand (program: Command) {
     program
         .command('init')  
-        .description('Initialize @jupiter-lab/react')
+        .description('Initialize @jupiter-lab/react in the current project.')
         .action(initProject);
 };
