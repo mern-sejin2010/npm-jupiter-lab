@@ -1,6 +1,6 @@
 {
   "name": "@jupiter-lab/react",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "A CLI for installing React, Next.js, MUI, Express.js, and full-stack components from the Jupiter Lab registry.",
   "bin": {
     "jupiter-lab": "dist/index.js"
