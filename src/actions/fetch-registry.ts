@@ -1,6 +1,20 @@
 import { registryURL } from '../registry-url.js';
-export default async function getRegistryItem (component: string) {
-    const url = `${registryURL}/registry/${component}.json`;  
+interface RegistryFile {
+    extension: 'tsx' | 'jsx';
+    content: string;
+};
+interface RegistryItem {
+    name: string;
+    title: string;
+    target: string;
+    files: RegistryFile[];
+    dependencies?: string[];
+    author?: string;
+};
+export default async function getRegistryItem (
+    component: string
+): Promise<RegistryItem> {
+    const url = `${registryURL}/registry/next/${component}`;  
     const response = await fetch(url);
     if (!response.ok) {
         throw new Error(
