@@ -135,3 +135,7 @@ MIT © Jupiter Lab
 ## Author
 ### Sejin Ahmed
 Creator & Maintainer - `Jupiter Lab`
+
+**GitHub:** https://github.com/mern-sejin2010
+
+**Linkedin:** https://www.linkedin.com/in/md-sejin-ahmed
