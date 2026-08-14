@@ -1,15 +1,133 @@
-# Under Development 
+# @jupiter-lab/react (Next.js + MUI)
 
+A lightweight, reusable React components for Next.js + Material UI (MUI) projects.
+
+## Installation
+```bash
+npm install @jupiter-lab/react
+```
+
+## Add Components
+Use the Jupiter Lab CLI to add components to your project:
+```bash
+npx @jupiter-lab/react add <component>
+```
+Example:
+```bash
+npx @jupiter-lab/react add custom-link
+```
+The CLI downloads the selected component and adds it directly to your project.
+
+## TypeScript & JavaScript
+You can specify the language when adding a component.
+
+**TypeScript:**
+```bash
+npx @jupiter-lab/react add custom-link --tsx
+```
+
+**JavaScript:**
+```bash
+npx @jupiter-lab/react add custom-link --jsx
+```
+
+The CLI downloads the selected component and adds it directly to your project.
+
+> If no language is specified, Jupiter Lab automatically detects your project's language and adds the appropriate version.
+
+## Usage
+After adding `custom-link`, import and use it in your Next.js application:
+
+```js
+import { CustomLink } from "./components/ui/custom-link"; 
+
+export default function App() { 
+    return ( 
+        <CustomLink href="/home">
+            Home
+        </CustomLink> 
+    ); 
+};
+```
+
+## Customization
+`CustomLink` supports standard `MUI Button` props along with additional active-state styling options.
+
+### Active Style
+Use `activeSx` to customize the appearance when the current route is active:
+```js
+<CustomLink 
+    href="/home" 
+    activeSx={{ 
+        color: "#5400ee", 
+        fontWeight: 700, 
+    }}
+> 
+    Home 
+</CustomLink>
+```
+
+### Active Class
+Use activeClass to apply a CSS class when the link is active:
+```js
+<CustomLink
+    href="/home"
+    activeClass="active-link"
 >
-    Jupiter Lab is currently under active development and testing.
->
+    Home
+</CustomLink>
+```
+CSS:
+```css
+.active-link {
+    color: #5400ee;
+    font-weight: 700;
+    text-decoration: underline;
+}
+```
 
-This package has **not been officially released** and is being used for internal testing purposes only.
+### MUI Props
+You can also use standard `MUI Button` props:
+```js
+    <CustomLink
+        href="/home"
+        variant="contained"
+        color="primary"
+    >
+        Home
+    </CustomLink>
+```
 
-Please **do not use this package in production projects** at this time, as APIs, commands, registry formats, and component structures may change without notice.
+`CustomLink` automatically detects the `current route` and applies `activeSx` or `activeClass` when the link matches the current pathname.
 
-The official public release will be announced once development and testing are complete.
+## Supported Languages
+Jupiter Lab supports both:
 
-Stay tuned for updates. We will notify the community when Jupiter Lab is ready for production use.
+- TypeScript — `.tsx`
+- JavaScript — `.jsx`
 
-— **The Jupiter Lab Team**
+Use `--tsx` or `--jsx` to explicitly select a version.
+
+## Why Jupiter Lab?
+- Reusable React components
+- Built for Next.js + MUI
+- TypeScript and JavaScript support
+- Simple CLI-based installation
+- Easy to customize
+- Install only the components you need
+- Automatic project language detection component
+
+## Requirements
+
+- Node.js 18+
+- React 18+
+- Next.js 14+
+- Material UI (MUI) 5+
+- A Next.js project
+
+## License
+MIT © Jupiter Lab
+
+## Author
+### Sejin Ahmed
+Creator & Maintainer - `Jupiter Lab`
