@@ -39,7 +39,7 @@ The CLI downloads the selected component and adds it directly to your project.
 After adding `custom-link`, import and use it in your Next.js application:
 
 ```js
-import { CustomLink } from "./components/ui/custom-link"; 
+import CustomLink from "./components/ui/custom-link"; 
 
 export default function App() { 
     return ( 
