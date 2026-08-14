@@ -1,6 +1,5 @@
 # @jupiter-lab/react (Next.js + MUI)
 
-[![npm version](https://img.shields.io/npm/v/@jupiter-lab/react)](https://www.npmjs.com/package/@jupiter-lab/react)
 [![npm downloads](https://img.shields.io/npm/dt/@jupiter-lab/react?label=downloads)](https://www.npmjs.com/package/@jupiter-lab/react)
 [![license](https://img.shields.io/npm/l/@jupiter-lab/react)](https://www.npmjs.com/package/@jupiter-lab/react)
 
