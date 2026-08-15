@@ -7,7 +7,7 @@ A lightweight, reusable React components for Next.js + Material UI (MUI) project
 
 ## Installation
 ```bash
-npm install @jupiter-lab/react
+npm install -D @jupiter-lab/react
 ```
 
 ## Add Components
