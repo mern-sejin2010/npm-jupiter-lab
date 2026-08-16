@@ -133,8 +133,8 @@ MIT © Jupiter Lab
 
 ## Author
 ### Sejin Ahmed
-Creator & Maintainer - `Jupiter Lab`
+Creator & Maintainer of **Jupiter Lab**
 
-**GitHub:** https://github.com/mern-sejin2010
+[![GitHub](https://img.shields.io/badge/GitHub-mern--sejin2010-181717)](https://github.com/mern-sejin2010)
 
-**Linkedin:** https://www.linkedin.com/in/md-sejin-ahmed
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-md--sejin--ahmed-0A66C2)](https://www.linkedin.com/in/md-sejin-ahmed)
