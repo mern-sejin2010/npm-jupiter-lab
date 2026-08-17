@@ -1,7 +1,8 @@
 # @jupiter-lab/react (Next.js + MUI)
 
+[![npm version](https://img.shields.io/npm/v/@jupiter-lab/react)](https://www.npmjs.com/package/@jupiter-lab/react)
 [![npm downloads](https://img.shields.io/npm/dt/@jupiter-lab/react?label=downloads)](https://www.npmjs.com/package/@jupiter-lab/react)
-[![license](https://img.shields.io/npm/l/@jupiter-lab/react)](https://www.npmjs.com/package/@jupiter-lab/react)
+[![license](https://img.shields.io/npm/l/@jupiter-lab/react?color=%23b41cdd)](https://www.npmjs.com/package/@jupiter-lab/react)
 
 A lightweight, reusable React components for Next.js + Material UI (MUI) projects.
 
@@ -17,6 +18,9 @@ npx @jupiter-lab/react add <component>
 ```
 Example:
 ```bash
+npx @jupiter-lab/react add flex
+```
+```bash
 npx @jupiter-lab/react add custom-link
 ```
 The CLI downloads the selected component and adds it directly to your project.
@@ -26,19 +30,19 @@ You can specify the language when adding a component.
 
 **TypeScript:**
 ```bash
-npx @jupiter-lab/react add custom-link --tsx
+npx @jupiter-lab/react add <component> --tsx
 ```
 
 **JavaScript:**
 ```bash
-npx @jupiter-lab/react add custom-link --jsx
+npx @jupiter-lab/react add <component> --jsx
 ```
 
 The CLI downloads the selected component and adds it directly to your project.
 
 > If no language is specified, Jupiter Lab automatically detects your project's language and adds the appropriate version.
 
-## Usage
+# Custom Link
 After adding `custom-link`, import and use it in your Next.js application:
 
 ```js
@@ -80,7 +84,7 @@ Use activeClass to apply a CSS class when the link is active:
     Home
 </CustomLink>
 ```
-CSS:
+### CSS:
 ```css
 .active-link {
     color: #5400ee;
@@ -102,6 +106,40 @@ You can also use standard `MUI Button` props:
 ```
 
 `CustomLink` automatically detects the `current route` and applies `activeSx` or `activeClass` when the link matches the current pathname.
+
+# Flex
+A simple responsive flex container built on top of `MUI` Stack.
+
+## Usage
+```js
+import Flex from './components/ui/flex';
+
+export default function App () { 
+    return ( 
+        <Flex 
+            align="center" 
+            justify="space-between" 
+            gap={2}
+        >
+            <div>Left</div> 
+            <div>Right</div> 
+        </Flex> 
+    ); 
+};
+```
+
+## Props
+
+| Prop | Description | Default |
+|---|---|---|
+| `direction` | Flex direction | `row` |
+| `display` | CSS display value | — |
+| `align` | `align-items` value | — |
+| `justify` | `justify-content` value | — |
+| `gap` | Gap between children | — |
+| `flexWrap` | Flex wrapping | — |
+| `sx` | MUI styling | — |
+| `...props` | All standard MUI `Stack` props | — |
 
 ## Supported Languages
 Jupiter Lab supports both:
@@ -136,5 +174,4 @@ MIT © Jupiter Lab
 Creator & Maintainer of **Jupiter Lab**
 
 [![GitHub](https://img.shields.io/badge/GitHub-mern--sejin2010-181717)](https://github.com/mern-sejin2010)
-
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-md--sejin--ahmed-0A66C2)](https://www.linkedin.com/in/md-sejin-ahmed)
